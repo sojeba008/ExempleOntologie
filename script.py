@@ -27,7 +27,7 @@ def storeUniversite(onto):
         universite = onto.Universite(supprimerAccent(u).capitalize().replace(" ","_"))
         universite.nomUniversite=[u]
         if(len(list(onto.search(iri = ("*"+universitesVilles[u])))) > 0):
-            universite.u_est_situe=[list(onto.search(iri = ("*"+universitesVilles[u])))[0]]
+            universite.nomVilleUniversite=[list(onto.search(iri = ("*"+universitesVilles[u])))[0]]
 
 def storeVaccins(onto):
     for i in list(range(30)):
@@ -114,28 +114,41 @@ def storeInfirmier(onto):
         #print(p.travaille)
 
 
-def storeService(onto):
-    for s in serviceOphtalmologie:
-        service = onto.ServiceOphtalmologie(supprimerAccent(s).capitalize().replace(" ","_"))
-        service.nomService = [str(s)]
-    for s in serviceDermatologie:
-        service = onto.ServiceDermatologie(supprimerAccent(s).capitalize().replace(" ","_"))
-        service.nomService = [str(s)]
-    for s in serviceCardiologie:
-        service = onto.ServiceCardiologie(supprimerAccent(s).capitalize().replace(" ","_"))
-        service.nomService = [str(s)]
-        
-
 def storeHopital(onto):
     for h in hopitaux.keys():
         hopital = onto.Hopital(supprimerAccent(h).capitalize().replace(" ","_"))
         hopital.nomHopital = [h]
-        hopital.h_est_situe = [onto.search(iri = ("*"+hopitaux[h]))[0]]
+        hopital.nomVilleHopital = [onto.search(iri = ("*"+hopitaux[h].lower()))[0]]
         
+
+def storeService(onto):
+    for h in hopitaux:
+        hopitalOnto = onto.search(iri = "*"+supprimerAccent(h.lower()).capitalize().replace(" ","_"))[0]
+        listService = []
+        for s in serviceOphtalmologie:
+            service = onto.ServiceOphtalmologie(supprimerAccent(s).capitalize().replace(" ","_")+"_"+supprimerAccent(h).capitalize().replace(" ","_"))
+            service.nomService = [str(s)]
+            listService.append(service)
+        for s in serviceDermatologie:
+            service = onto.ServiceDermatologie(supprimerAccent(s).capitalize().replace(" ","_")+"_"+supprimerAccent(h).capitalize().replace(" ","_"))
+            service.nomService = [str(s)]
+            listService.append(service)
+        for s in serviceCardiologie:
+            service = onto.ServiceCardiologie(supprimerAccent(s).capitalize().replace(" ","_")+"_"+supprimerAccent(h).capitalize().replace(" ","_"))
+            service.nomService = [str(s)]
+            listService.append(service)
+        hopitalOnto.est_compose = listService
+ 
+
 #storeHopital(onto)
 
 def storeMedecin(onto):
     for i in list(range(8)): #210 50
+    
+        listHopitauxOnto = onto.search(type = onto.Hopital)
+        nbHopitaux = len(listHopitauxOnto)
+        hopital = listHopitauxOnto[randint(0, nbHopitaux-1)]
+        
         nom = get_radom_name()
         prenom = get_radom_name()
         typeMed = randint(0,3)
@@ -144,13 +157,13 @@ def storeMedecin(onto):
             listServicesOnto = []
         elif (typeMed==1):
             p = onto.Ophtalmologiste(nom.upper()+"_"+prenom)
-            listServicesOnto = onto.search(type = onto.ServiceOphtalmologie)
+            listServicesOnto = onto.search(type = onto.ServiceOphtalmologie, iri="*"+hopital.name)
         elif (typeMed==2):
             p = onto.Dermatologue(nom.upper()+"_"+prenom)
-            listServicesOnto = onto.search(type = onto.ServiceDermatologie)
+            listServicesOnto = onto.search(type = onto.ServiceDermatologie, iri="*"+hopital.name)
         elif (typeMed==3):
             p = onto.Cardiologue(nom.upper()+"_"+prenom)
-            listServicesOnto = onto.search(type = onto.ServiceCardiologie)
+            listServicesOnto = onto.search(type = onto.ServiceCardiologie, iri="*"+hopital.name)
 
         p.nomPersonne = [nom]
         p.prenomPersonne = [prenom]
@@ -172,6 +185,10 @@ def storeMedecin(onto):
             listPatient.append(listPatientOnto[randint(0,nbPatientOnto-1)])
         p.soigne = listPatient
         
+
+
+        p.travaille = [hopital]
+        
         
         nbServicesOnto = len(listServicesOnto)
         nbpatients = randint(1,1)
@@ -180,10 +197,6 @@ def storeMedecin(onto):
             for j in list(range(nbpatients)):
                 listService.append(listServicesOnto[randint(0, nbServicesOnto-1)])
             p.est_affecte = listService
-
-        listHopitauxOnto = onto.search(type = onto.Hopital)
-        nbHopitaux = len(listHopitauxOnto)
-        p.travaille = [listHopitauxOnto[randint(0, nbHopitaux-1)]]
 
 #for h in hopitaux.keys():
 #    hopital = onto.Hopital(supprimerAccent(h).capitalize().replace(" ","_"))
@@ -213,12 +226,6 @@ def storeVacinnation(onto):
         print(" \n ")
 
 
-
-
-
-    
-
-
 def storeChambre(onto):
     for s in onto.search(type=onto.Service):
         cp = 0
@@ -231,7 +238,7 @@ def storeChambre(onto):
 
 
 #p.has_topping = []
-storeVille(onto)
+#storeVille(onto)
 storeUniversite(onto)
 storeVaccins(onto)
 storeMaladie(onto)

@@ -159,7 +159,7 @@ vaccins=["Priorix","Rabipur","Repevax","Tyavax"]
 maladiesGrave = ["Mucoviscidose", "Hémophilie","Epilepsie","Psychose","Diabete", "Drépanocytose"]
 maladiesGenetique = ["Phénylcétonurie", "Mitochondrial","Phénylcétonurie"]
 maladies = ["Choléra", "Fièvre jaune","Coqueluche", "Toux", "Gastroentérite à rotavirus", "Nodules", "Acné", "Teigne"]
-hopitaux = {"CHU Dijon":"Dijon"} #, "CHU Paris":"Paris"
+hopitaux = {"CHU Dijon":"Dijon", "CHU Paris":"Paris"} #, "CHU Paris":"Paris"
 
 
 universites = np.unique(list(universitesVilles.keys()))
