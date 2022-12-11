@@ -87,6 +87,18 @@
     <Declaration>
         <ObjectProperty IRI="#travaille"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#anneeDeNaissance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nomPersonne"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#prenomPersonne"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#villeDeNaissance"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Infirmier"/>
         <Class IRI="#PersonnelMedical"/>
@@ -182,6 +194,60 @@
         <ObjectProperty IRI="#soigne"/>
         <ObjectProperty IRI="#travaille"/>
     </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#anneeDeNaissance"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nomPersonne"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#prenomPersonne"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#villeDeNaissance"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#anneeDeNaissance"/>
+        <Class IRI="#Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nomPersonne"/>
+        <Class IRI="#Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#prenomPersonne"/>
+        <Class IRI="#Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#villeDeNaissance"/>
+        <Class IRI="#Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#anneeDeNaissance"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nomPersonne"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#prenomPersonne"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#villeDeNaissance"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#anneeDeNaissance"/>
+        <DataProperty IRI="#nomPersonne"/>
+        <DataProperty IRI="#prenomPersonne"/>
+        <DataProperty IRI="#villeDeNaissance"/>
+    </DisjointDataProperties>
 </Ontology>
 
 

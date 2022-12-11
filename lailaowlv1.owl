@@ -1,0 +1,1066 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#appartient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#appartient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_appartenu"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#atteinte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#atteinte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_contracte"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#correspond -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#correspond">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dirige -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dirige">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_dirige"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#donne_diplome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#donne_diplome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_diplome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_appartenu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_appartenu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_associe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_associe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#sert_a"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_compose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_compose">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#travaille"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_contracte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_contracte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_diplome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_diplome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_dirige -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_dirige">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_injecte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_injecte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#injecte"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_lie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_lie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#fait_objet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_reçu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_reçu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_soigne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_soigne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#soigne"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#fait_objet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#fait_objet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_comporte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_comporte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_est_situe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_est_situe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_est_situe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#injecte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#injecte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#sert_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#sert_a">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#soigne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#soigne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#travaille -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#travaille">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_comporte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_comporte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_est_situe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_est_situe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_est_situe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#anneDeNaissance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#anneDeNaissance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateHospitalisation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateHospitalisation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateInjection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateInjection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateObtentionDiplome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateObtentionDiplome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomHopital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomHopital">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomMaladie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomMaladie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomMetropole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomMetropole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomPays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomPays">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomPersonne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomPersonne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomService -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomVaccin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomVaccin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomVille -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomVille">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#numVaccin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#numVaccin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#prenomPersonne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#prenomPersonne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#villeDeNaissance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#villeDeNaissance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Cardiologue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Cardiologue">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinSpecialise"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceCardiologie"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#appartient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Dermatologue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Dermatologue">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinSpecialise"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceDermatologie"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#EcoleInfirmier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#EcoleInfirmier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#FacDeMédécine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#FacDeMédécine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_compose"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_dirige"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_est_situe"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_associe"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_lie"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Infirmier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Infirmier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MaladieGenetique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MaladieGenetique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MaladieGrave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MaladieGrave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinGeneraliste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinGeneraliste">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinPluridisciplinaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinPluridisciplinaire">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinSpecialise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinSpecialise">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ophtalmologiste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ophtalmologiste">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinSpecialise"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceOphtalmologie"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dirige"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneCycleVaccinalComplet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneCycleVaccinalComplet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#VaccinCovid"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVaccinee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVaccinee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVaccineeCovid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVaccineeCovid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#VaccinCovid"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVulnerable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVulnerable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#atteinte"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MaladieGrave"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVulnerableCycleVaccinalComplet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVulnerableCycleVaccinalComplet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonneVulnerable"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#VaccinCovid"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_diplome"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#travaille"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_appartenu"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#correspond"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Medecin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceCardiologie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceCardiologie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceDermatologie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceDermatologie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceOphtalmologie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#ServiceOphtalmologie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_est_situe"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_injecte"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#PersonnelMedical"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_reçu"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#VaccinCovid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#VaccinCovid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#VaccinHepatite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#VaccinHepatite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_comporte"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_comporte"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Cardiologue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Dermatologue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Maladie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ophtalmologiste"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Universite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#EcoleInfirmier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MaladieGenetique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinGeneraliste"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinSpecialise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Chambre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#EcoleInfirmier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hospitalisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MaladieGrave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinGeneraliste"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#MedecinSpecialise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Vaccin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Ville"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#appartient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#atteinte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#correspond"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dirige"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#donne_diplome"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_affecte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_appartenu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_associe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_compose"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_contracte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_diplome"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_dirige"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_injecte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_lie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_reçu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#est_soigne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#fait_objet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_comporte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#h_est_situe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#injecte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#reçoit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#sert_a"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#soigne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#travaille"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_comporte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#u_est_situe"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#anneDeNaissance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateHospitalisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateInjection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dateObtentionDiplome"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomHopital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomMaladie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomMetropole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomPays"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomPersonne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomService"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomVaccin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#nomVille"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#numVaccin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#prenomPersonne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#villeDeNaissance"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

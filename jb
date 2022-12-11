@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#appartient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#appartient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#atteinte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#atteinte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#dirige -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#dirige">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_affecte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_affecte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_associe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_associe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_diplome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_diplome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_situe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_situe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#fait_objet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#fait_objet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#inject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#inject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#recoit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#recoit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#soigne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#soigne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#travaille -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#travaille">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#anneeDeNaissance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#anneeDeNaissance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#nomPersonne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#nomPersonne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#prenomPersonne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#prenomPersonne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#villeDeNaissance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#villeDeNaissance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Chambre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Chambre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Hopital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Hopital"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Hospitalisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Hospitalisation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Infirmier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Infirmier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#PersonnelMedical"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Medecin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Maladie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Maladie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Medecin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Medecin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#PersonnelMedical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#PersonnelMedical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#PersonnelMedical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Universite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Universite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Vaccin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Vaccin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Ville -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Ville"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#SOSSOU_JB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#SOSSOU_JB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#PersonnelMedical"/>
+        <anneeDeNaissance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1978</anneeDeNaissance>
+        <nomPersonne rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOSSOU</nomPersonne>
+        <prenomPersonne rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JB</prenomPersonne>
+        <villeDeNaissance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paris</villeDeNaissance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Chambre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Hopital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Hospitalisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Maladie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Patient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Personne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#PersonnelMedical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Universite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Vaccin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#Ville"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#appartient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#atteinte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#dirige"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_affecte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_associe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_diplome"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#est_situe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#fait_objet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#inject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#recoit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#soigne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#travaille"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#anneeDeNaissance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#nomPersonne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#prenomPersonne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sojeb/ontologies/2022/11/untitled-ontology-3#villeDeNaissance"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
