@@ -492,6 +492,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Directeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Directeur">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#dirige"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Hopital"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#Personne"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#EcoleInfirmier -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/kls/ontologies/2022/11/untitled-ontology-11#EcoleInfirmier">

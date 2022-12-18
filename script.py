@@ -30,22 +30,22 @@ def storeUniversite(onto):
             universite.nomVilleUniversite=[list(onto.search(iri = ("*"+universitesVilles[u])))[0]]
 
 def storeVaccins(onto):
-    for i in list(range(30)):
+    for i in list(range(10)):
         for vc in vaccins:
             vc=str(vc)
             vaccin = onto.Vaccin(supprimerAccent(vc).capitalize().replace(" ","_")+"_"+str(i))
-            vaccin.nomVaccin=[vc]
-            vaccin.numVaccin=[str(i)]
-            
-        for vc in vaccinsCovid:
-            vc=str(vc)
-            vaccin = onto.VaccinCovid(supprimerAccent(vc).capitalize().replace(" ","_")+"_"+str(i))
             vaccin.nomVaccin=[vc]
             vaccin.numVaccin=[str(i)]
         
         for vc in vaccinsHepatite:
             vc=str(vc)
             vaccin = onto.VaccinHepatite(supprimerAccent(vc).capitalize().replace(" ","_")+"_"+str(i))
+            vaccin.nomVaccin=[vc]
+            vaccin.numVaccin=[str(i)]
+    for i in list(range(25)) :
+        for vc in vaccinsCovid:
+            vc=str(vc)
+            vaccin = onto.VaccinCovid(supprimerAccent(vc).capitalize().replace(" ","_")+"_"+str(i))
             vaccin.nomVaccin=[vc]
             vaccin.numVaccin=[str(i)]
 
@@ -63,7 +63,7 @@ def storeMaladie(onto):
         
 
 def storePatients(onto):
-    for i in list(range(10)):  #150
+    for i in list(range(60)):  #150
         nom = get_radom_name()
         prenom = get_radom_name()
         p = onto.Patient(nom.upper()+"_"+prenom)
@@ -82,7 +82,7 @@ def storePatients(onto):
         
 
 def storeInfirmier(onto):
-    for i in list(range(6)): #"150"
+    for i in list(range(20)): #"150"
         nom = get_radom_name()
         prenom = get_radom_name()
         p = onto.Infirmier(nom.upper()+"_"+prenom)
@@ -143,7 +143,7 @@ def storeService(onto):
 #storeHopital(onto)
 
 def storeMedecin(onto):
-    for i in list(range(8)): #210 50
+    for i in list(range(12)): #210 50
     
         listHopitauxOnto = onto.search(type = onto.Hopital)
         nbHopitaux = len(listHopitauxOnto)
@@ -212,16 +212,28 @@ def storeVacinnation(onto):
     nbPersonneOnto = len(listPersonneOnto)
     
     for j in listVaccinsOnto:
+        
         print(j)
         
         personne = listPersonneOnto[randint(1,nbPersonneOnto-1)]
         print(personne)
-        personne.reçoit = [j];
+        tmp = personne.reçoit
+        
+        try:
+           personne.reçoit = personne.reçoit.append(j)
+        except Exception:
+            pass
+        
         
         listPersoMedOnto = onto.search(type=onto.PersonnelMedical)
         nbPersoMedOnto = len(listPersoMedOnto)
         persoMedVacc = listPersoMedOnto[randint(0,nbPersoMedOnto-1)]
-        persoMedVacc.injecte = [j]
+        
+        try:
+            persoMedVacc.injecte = persoMedVacc.injecte.append(j)
+        except Exception:
+            pass
+        
         print(persoMedVacc)
         print(" \n ")
 
@@ -230,7 +242,7 @@ def storeChambre(onto):
     for s in onto.search(type=onto.Service):
         cp = 0
         for i in list(range(5)):
-            c = onto.Chambre("CH_"+str(cp))
+            c = onto.Chambre("CH_"+str(cp)+"_"+str(s.name))
             c.appartient = [s]
             cp+=1
         
@@ -248,27 +260,7 @@ storeInfirmier(onto)
 storeChambre(onto)
 storeService(onto)
 storeMedecin(onto)
-
 storeVacinnation(onto)
 
 onto.save(file = "SB2.owl", format = "rdfxml")
 
-
-listVaccinsOnto = onto.search(type = onto.Vaccin)
-nbVaccinsOnto = len(listVaccinsOnto)
-
-listPersonneOnto = onto.search(type = onto.Personne)
-nbPersonneOnto = len(listPersonneOnto)
-for j in listVaccinsOnto:
-    personne = listPersonneOnto[randint(1,nbPersonneOnto-1)]
-    personne.reçoit = [j];
-    
-    listPersoMedOnto = onto.search(type=onto.PersonnelMedical)
-    nbPersoMedOnto = len(listPersoMedOnto)
-    persoMedVacc = listPersoMedOnto[randint(0,nbPersoMedOnto-1)]
-    persoMedVacc.injecte = [j]
-    print(j)
-    print(personne)
-    print(persoMedVacc)
-    print("\n")
- 
